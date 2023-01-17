@@ -1,0 +1,118 @@
+<style>
+    .fondo-pantalla{
+        background-image: url("img/fondo-pedidos.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<div class="container text-center">
+    <div class="fondo-pantalla">
+    <hr>
+    <h2>
+        <br>
+        Tu Pedido <br> Menu Click
+    </h2>
+    <h4>
+    <br>
+        Chequeá tu pedido 
+    </h4>
+    <br>
+</div>
+
+<div class="container text-center">
+    <table class="table table-striped container" id="mitabla">
+        <thead>
+            <tr>
+                <th scope="col">idMenus</th>
+                <th scope="col">Menu</th>
+                <th scope="col">Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each datos}}
+            <tr>
+                <th scope="row">{{ this.idMenus }}</th>
+                <td>{{ Menu }}</td>
+                <td>{{ precio }}</td>
+                <td>
+
+                <a href="javascript:void(0);" class="btn btn-danger delete"  data-idMenus="{{ idMenus }}" style="color: white">Eliminar</a>
+                
+                <a href="/saludo" class="btn btn-outline-secondary" style="color: white; background-color:rgb(255, 140, 0)">Enviar</a>        
+                
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+</div>
+
+<section>
+<style>
+      .tapiz-m{
+        background-image: url("img/fondo-index2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+    }
+</style>
+<div class="container text-center">
+    <div class="tapiz-m">
+        <h4>
+            <br>
+            <br>
+            <br>
+            Te invitamos nos sigas en instagram
+            <br><br>
+            <a href="https://www.instagram.com/suacatering/"><img src="/img/insta.png" width="40px" height="40px" alt=""></a>
+        </h4>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+<br>
+    
+</section>
+
+
+{{!-- modal delete --}}
+<form action="/delete" method="post">
+    <div class="modal" id="DeleteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Eliminar Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Está seguro de eliminar su elección?.</p>
+                </div>
+                <div class="modal-footer">
+                    <input type="number" name="idMenus" id="idMenus" required>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerra</button>
+                    <button type="submit" class="btn btn-danger" data-dismiss="modal">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+{{!-- Funcion para tomar datos del modal --}}
+
+<script>
+
+    $(document).ready(function () {
+
+            $('#mitabla').on('click', '.delete', function () {
+                let idMenus = $(this).data('idMenus');
+                $('#DeleteModal').modal('show')
+            })  
+        
+    })
+</script>

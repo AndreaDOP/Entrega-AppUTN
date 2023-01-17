@@ -1,0 +1,487 @@
+
+
+<div class="container text-center -5">
+    <hr>
+    <h1>
+    Menu<i>Click</i>
+    </h1>
+    <hr>
+</div>
+
+<div class="container text-center -5">
+  <h2>
+    Qué te gustaria comer hoy
+  </h2>
+</div>
+
+<main>
+
+  <section class="py-3 text-center container">
+    <div class="row py-lg-3">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Los más solicitados</h1>
+        <p class="lead text-muted">Todos nuestros platos son elaborados con productos de calidad.</p>
+        <!--
+        <div class="container">
+          <a href="#" class="btn bg-success col-4 bg-opacity-25 w-40">pendiente</a>
+          <a href="#" class="btn bg-success col-4 bg-opacity-25 w-40">pendiente</a>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+<div class="container">
+  <div class="btn">
+    <style>
+      .btn{
+        background-color: rgb(255 140 0);
+      }
+    </style>
+<form action="/menus" method="post">
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="/img/bondiola.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Uno de los mejores cortes de carne. Sabrosa, tierna y jugosa. La puedes pedir a la parrilla o a la cerveza negra. Sus guarniciones son: Papas al horno con matequilla y romero o ensalada mixta.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+                  
+                    <div class="mb-3 text-center">
+
+                    <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Bondiola">
+                      <input type="hidden" name="precio" value="2100">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number" name="">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                    </form>
+
+                    </div>                 
+                </div>
+                <small class="text-muted">10 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/img/suprema.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Suprema de pollo al limón y hierba. Nuestras supremas a la parrilla son de textura tierna y sabrosa. Sus guarniciones son: Papa rellena al horno o ensaldas especial se hojas verdes/parmesano.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="2">
+                      <input type="hidden" name="Menu" value="Suprema">
+                      <input type="hidden" name="precio" value="1800">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                  </form>
+
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/img/lomo.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Lomo a la parrilla. Corte magro, cocción a gusto, tierno y muy rico. Disfruta! Sus guarniciones son: Papas fritas, papa rellena al horno o ensaldas especial se hojas verdes/parmesano.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+
+                  <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Lomo">
+                      <input type="hidden" name="precio" value="2500">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                  </form>
+
+                </div>
+                <small class="text-muted">15 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/img/rubi.png" alt="">
+
+            <div class="card-body">
+              <p class="card-text">Saludable y fresca ensalada. Mix hojas verdes, láminas de queso de cabra, frambuezas y moras, cherrys, vinagreta de miel y mostaza, incluye pan de ajo.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                  <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Ensalda Rubi">
+                      <input type="hidden" name="precio" value="990">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                  </form>
+
+                </div>
+                <small class="text-muted">5 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/img/salmon.png" alt="">
+
+            <div class="card-body">
+              <p class="card-text">Deli Salmón a la plnacha o parrilla, sazonado con hiernas frescas. Sus guarniciones son: Papa rellena al horno o ensaldas especial se hojas verdes/parmesano.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Ensalda Salmon">
+                      <input type="hidden" name="precio" value="2100">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                  </form>
+
+                </div>
+                <small class="text-muted">10 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="/img/champi.png" alt=""> 
+
+            <div class="card-body">
+              <p class="card-text">Deliciosos champiñones rellenos de 4 quesos y gratinados, ideal para disfrutar una comida diferente. Sus guarnicione es ensalda especial se hojas verdes/parmesano.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+
+                  <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Champiñones rellenos">
+                      <input type="hidden" name="precio" value="1500">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                  </form>
+
+                </div>
+                <small class="text-muted">8 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/img/ravioles.png" alt="">
+            
+            <div class="card-body">
+              <p class="card-text">Pasta casera fresca con relleno de espinacas y queso ricotta. Acompáñalos con nuestra rica salsa Napolitana y queso parmesano recién rallando. Incluye una prciosn de pan de ajo. </p>
+
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+
+                <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Ravioles">
+                      <input type="hidden" name="precio" value="1990">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>  
+                                          
+                  </form>
+
+                </div>
+                <small class="text-muted">10 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/img/guiso.png" alt="">            
+
+            <div class="card-body">
+              <p class="card-text">Guiso de lentejas, uno de los más pedidos. Son elaborados con la receta familiar. Incluye panceta y chorizo colorado español. Más porción de pan de ajo y parmesano. </p>
+
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+
+                  <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Guiso">
+                      <input type="hidden" name="precio" value="2000">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                  </form>
+                </div>
+                <small class="text-muted">5 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/img/wok.png" alt="">
+            
+            <div class="card-body">
+              <p class="card-text">Wok eleborado al momento. Surtido de verduras salteadas al wok, con acerte de sesamo. Incluye arroz, y lo puedes acompañar con lomo, cerdo, pollo, camarones o solo.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+
+                <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Wok">
+                      <input type="hidden" name="precio" value="1800">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                  </form>
+
+                </div>
+                <small class="text-muted">10 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+</main>
+<br>
+<!-- seccion postres -->
+<section>
+<style>
+    .seccionpostres{
+        background-image: url("img/seccionpostres.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>  
+
+<div class="container text-center">
+  <div class="seccionpostres">
+    <h2>
+      <br><br><br>
+      Deliciosos Postres
+    </h2>       
+        <br><br><br><br><br><br>
+</section>
+
+  <section class="py-3 text-center container">
+    <div class="row py-lg-3">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h3 class="fw-light">Selecciona los que quieras!</h3>
+        <p class="lead text-muted">Todos nuestros postres son elaborados con productos de calidad.</p>
+      </div>
+    </div>
+  </section>
+
+<div class="container">
+  <div class="btn1">
+    <style>
+      .btn{
+        background-color: rgb(255 140 0);
+      }
+    </style>
+
+<form action="/menus" method="post">
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="/img/posframbu.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Deliciosas capas de milhojas, emulsionadas con dulce de leche suave. Frambuesas frescas con crema especiada con toques de vainilla, espolvoreada con azúcar glass.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+                  
+                    <div class="mb-3 text-center">
+
+                    <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Bondiola">
+                      <input type="hidden" name="precio" value="2100">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                    </form>
+
+                    </div>                 
+                </div>
+                <small class="text-muted">10 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/img/posflan.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Suprema de pollo al limón y hierba. Nuestras supremas a la parrilla son de textura tierna y sabrosa. Sus guarniciones son: Papa rellena al horno o ensaldas especial se hojas verdes/parmesano.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="2">
+                      <input type="hidden" name="Menu" value="Suprema">
+                      <input type="hidden" name="precio" value="1800">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                  </form>
+
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/img/posfruti.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Lomo a la parrilla. Corte magro, cocción a gusto, tierno y muy rico. Disfruta! Sus guarniciones son: Papas fritas, papa rellena al horno o ensaldas especial se hojas verdes/parmesano.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+
+                  <form action="/menus" method="post">
+                      <input type="hidden" name="idMenus" value="1">
+                      <input type="hidden" name="Menu" value="Lomo">
+                      <input type="hidden" name="precio" value="2500">
+                      
+                      <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: white;" >Cant.</button>
+                        <input type="number">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary" style="color: white";>Enviar Pedido</button>
+                      </div>                      
+                  </form>
+
+                </div>
+                <small class="text-muted">15 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>   
+  </div> 
+</div>
+</div>
+
+<section>
+<style>
+      .tapiz-m{
+        background-image: url("img/fondo-index2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+    }
+</style>
+  
+<div class="container text-center">
+  <div class="tapiz-m">
+        <h4>
+          <br>
+          <br>
+          <br> 
+        Te invitamos a que nos sigas en instagram 
+        <br><br>
+        <a href="https://www.instagram.com/suacatering/"><img src="/img/insta.png" width="40px" height="40px" alt=""></a>
+        
+        </h4>
+        <br>
+
+<!--  ver         
+    <div class="container text-center">      
+      <button type="submit" class="btn btn-mb btn-outline-secondary w-40"  style="color: white">Take Away</button>
+      <button type="submit" class="btn btn-mb btn-outline-secondary w-40"  style="color: white">A la Mesa</button>
+    </div>
+--> 
+    <br>
+    <br>
+  </div> 
+</div>
+<br>
+    
+</section>
+
